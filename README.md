@@ -1,5 +1,7 @@
-# Bone-Cancer-Detection
-Deep Learning model for classifying bone X-ray images into Cancer or Normal, with Flask interface.
+# Bone Cancer Detection using Deep Learning
+
+This project applies a **Convolutional Neural Network (CNN)** to classify bone X-ray images into **Cancer** or **Normal**.  
+The trained model is deployed using a **Flask web interface** to allow users to upload images and get real-time predictions.
 
 ## 📂 Datasets & Model
 
