@@ -1,6 +1,3 @@
 Python 3.7.8
 tensorflow
 keras
-
-تم رفع المودل bone_cancer_model.h5 على Google Drive للتحميل:
-https://drive.google.com/drive/folders/1AquyK98Bw-yVq9KKm857Q8CwkdQd6UJZ?usp=drive_link
