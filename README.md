@@ -59,24 +59,6 @@ Dataset used: https://drive.google.com/drive/folders/1tPPzQVHy09LXfptV-mpAc91LVn
 
 Trained Model: https://drive.google.com/drive/folders/1AquyK98Bw-yVq9KKm857Q8CwkdQd6UJZ?usp=drive_link
 
-## 🌍 Future Improvements
-
-**-** Integrate with real hospital systems for automated screening.
-
-**-** Add support for other cancer types.
-
-**-** Use advanced architectures like ResNet or EfficientNet for higher accuracy.
-
-**-** Build an admin dashboard for doctors to manage patient results.
-
-## 🧾 Notes
-
-**-** Dataset and model files are too large to be stored on GitHub.
-
-**-** All experiment notebooks and trained models are linked via Google Drive.
-
-**-** This project was developed as part of a Bachelor’s Graduation Project in Software Engineering.
-
 ## 💻 Flask Interface
 
 Below is a screenshot of the Flask web interface where users can upload an X-ray image and get the prediction result in real time:
@@ -106,3 +88,22 @@ The following figure shows the ROC Curve generated from the model evaluation pha
 It demonstrates the model’s excellent ability to distinguish between cancer and normal images, with an AUC of 0.97:
 
 <p align="center"> <img src="static/roc_curve.png" alt="ROC Curve" width="40%"> </p>
+
+## 🌍 Future Improvements
+
+**-** Integrate with real hospital systems for automated screening.
+
+**-** Add support for other cancer types.
+
+**-** Use advanced architectures like ResNet or EfficientNet for higher accuracy.
+
+**-** Build an admin dashboard for doctors to manage patient results.
+
+## 🧾 Notes
+
+**-** Dataset and model files are too large to be stored on GitHub.
+
+**-** All experiment notebooks and trained models are linked via Google Drive.
+
+**-** This project was developed as part of a Bachelor’s Graduation Project in Software Engineering.
+
