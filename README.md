@@ -77,7 +77,7 @@ Trained Model: https://drive.google.com/drive/folders/1AquyK98Bw-yVq9KKm857Q8Cwk
 
 **-** This project was developed as part of a Bachelor’s Graduation Project in Software Engineering.
 
-💻 Flask Interface
+## 💻 Flask Interface
 
 Below is a screenshot of the Flask web interface where users can upload an X-ray image and get the prediction result in real time:
 
