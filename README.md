@@ -35,6 +35,7 @@ The model achieved an accuracy of 91% and an AUC of 0.97, which indicates that w
 The Flask web app allows users to upload an X-ray image, analyze it, and instantly display the prediction along with the confidence level.
 
 graph TD;
+
     A[Upload X-ray Image] --> B[Image Preprocessing];
     
     B --> C[Send to CNN Model];
