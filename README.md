@@ -91,14 +91,14 @@ Below are screenshots from the Flask web interface showing how the system predic
 
 When an X-ray image of a healthy bone is uploaded, the system predicts it as Normal, highlighted in green to indicate a safe condition.
 
-<p align="center"> <img src="static/example_normal.png" alt="Normal Prediction Interface" width="70%"> </p>
+<p align="center"> <img src="static/example_normal.png" alt="Normal Prediction Interface" width="60%"> </p>
 
  ## 🟥 Cancer Case
 
 When an X-ray image of a cancerous bone is uploaded,
 the system predicts it as Cancer, highlighted in red to alert the user about a possible malignancy.
 
-<p align="center"> <img src="static/example_cancer.png" alt="Cancer Prediction Interface" width="70%"> </p>
+<p align="center"> <img src="static/example_cancer.png" alt="Cancer Prediction Interface" width="60%"> </p>
 
 ## 📈 ROC Curve
 
