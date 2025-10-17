@@ -50,22 +50,7 @@ graph TD;
     C --> D[Prediction Generation];
     
     D --> E[Display Result & Confidence Score];
-
-| File / Folder                 | Description                   |
-| ----------------------------- | ----------------------------- |
-| `app.py`                      | Flask web application         |
-| `templates/`                  | HTML templates for Flask      |
-| `training.ipynb`              | Jupyter Notebook for training |
-| `requirements.txt`            | Python dependencies           |
-
-## 📂 Datasets & Model
-
-
-Dataset used: https://drive.google.com/drive/folders/1tPPzQVHy09LXfptV-mpAc91LVnm_2_FX?usp=drive_link
-
-
-Trained Model: https://drive.google.com/drive/folders/1AquyK98Bw-yVq9KKm857Q8CwkdQd6UJZ?usp=drive_link
-
+    
 ## 💻 Flask Interface
 
 Below is a screenshot of the Flask web interface where users can upload an X-ray image and get the prediction result in real time:
@@ -88,6 +73,23 @@ When an X-ray image of a cancerous bone is uploaded,
 the system predicts it as Cancer, highlighted in red to alert the user about a possible malignancy.
 
 <p align="center"> <img src="static/example_cancer.png" alt="Cancer Prediction Interface" width="60%"> </p>
+    
+## 📂 Project Structure
+
+| File / Folder                 | Description                   |
+| ----------------------------- | ----------------------------- |
+| `app.py`                      | Flask web application         |
+| `templates/`                  | HTML templates for Flask      |
+| `training.ipynb`              | Jupyter Notebook for training |
+| `requirements.txt`            | Python dependencies           |
+
+## 📂 Datasets & Model
+
+Dataset used: https://drive.google.com/drive/folders/1tPPzQVHy09LXfptV-mpAc91LVnm_2_FX?usp=drive_link
+
+
+Trained Model: https://drive.google.com/drive/folders/1AquyK98Bw-yVq9KKm857Q8CwkdQd6UJZ?usp=drive_link
+
 
 ## 🌍 Future Improvements
 
