@@ -36,8 +36,11 @@ The Flask web app allows users to upload an X-ray image, analyze it, and instant
 
 graph TD;
     A[Upload X-ray Image] --> B[Image Preprocessing];
+    
     B --> C[Send to CNN Model];
+    
     C --> D[Prediction Generation];
+    
     D --> E[Display Result & Confidence Score];
 
 | File / Folder                 | Description                   |
