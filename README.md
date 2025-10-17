@@ -61,7 +61,7 @@ Trained Model: https://drive.google.com/drive/folders/1AquyK98Bw-yVq9KKm857Q8Cwk
 
 ## 🌍 Future Improvements
 
-** - ** Integrate with real hospital systems for automated screening.
+**-** Integrate with real hospital systems for automated screening.
 
 Add support for other cancer types.
 
