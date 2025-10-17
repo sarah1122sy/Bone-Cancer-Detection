@@ -63,16 +63,16 @@ Trained Model: https://drive.google.com/drive/folders/1AquyK98Bw-yVq9KKm857Q8Cwk
 
 **-** Integrate with real hospital systems for automated screening.
 
-Add support for other cancer types.
+**-** Add support for other cancer types.
 
-Use advanced architectures like ResNet or EfficientNet for higher accuracy.
+**-** Use advanced architectures like ResNet or EfficientNet for higher accuracy.
 
-Build an admin dashboard for doctors to manage patient results.
+**-** Build an admin dashboard for doctors to manage patient results.
 
 ## 🧾 Notes
 
-Dataset and model files are too large to be stored on GitHub.
+**-** Dataset and model files are too large to be stored on GitHub.
 
-All experiment notebooks and trained models are linked via Google Drive.
+**-** All experiment notebooks and trained models are linked via Google Drive.
 
-This project was developed as part of a Bachelor’s Graduation Project in Software Engineering.
+**-** This project was developed as part of a Bachelor’s Graduation Project in Software Engineering.
