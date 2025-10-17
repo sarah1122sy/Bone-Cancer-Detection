@@ -81,11 +81,11 @@ Trained Model: https://drive.google.com/drive/folders/1AquyK98Bw-yVq9KKm857Q8Cwk
 
 Below is a screenshot of the Flask web interface where users can upload an X-ray image and get the prediction result in real time:
 
-<p align="center"> <img src="static/interface.png" alt="Flask Interface" width="70%"> </p>
+<p align="center"> <img src="static/interface.png" alt="Flask Interface" width="60%"> </p>
 
 ## 📈 ROC Curve
 
 The following figure shows the ROC Curve generated from the model evaluation phase.
 It demonstrates the model’s excellent ability to distinguish between cancer and normal images, with an AUC of 0.97:
 
-<p align="center"> <img src="static/roc_curve.png" alt="ROC Curve" width="70%"> </p>
+<p align="center"> <img src="static/roc_curve.png" alt="ROC Curve" width="40%"> </p>
