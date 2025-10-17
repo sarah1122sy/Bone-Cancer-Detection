@@ -83,6 +83,23 @@ Below is a screenshot of the Flask web interface where users can upload an X-ray
 
 <p align="center"> <img src="static/interface.png" alt="Flask Interface" width="60%"> </p>
 
+## 🖼️ Flask Interface Demonstration
+
+Below are screenshots from the Flask web interface showing how the system predicts and displays the results for both classes:
+
+ ## 🟩 Normal Case
+
+When an X-ray image of a healthy bone is uploaded, the system predicts it as Normal, highlighted in green to indicate a safe condition.
+
+<p align="center"> <img src="static/example_normal.png" alt="Normal Prediction Interface" width="70%"> </p>
+
+ ## 🟥 Cancer Case
+
+When an X-ray image of a cancerous bone is uploaded,
+the system predicts it as Cancer, highlighted in red to alert the user about a possible malignancy.
+
+<p align="center"> <img src="static/example_cancer.png" alt="Cancer Prediction Interface" width="70%"> </p>
+
 ## 📈 ROC Curve
 
 The following figure shows the ROC Curve generated from the model evaluation phase.
