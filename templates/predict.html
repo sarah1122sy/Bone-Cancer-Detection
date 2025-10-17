@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bone Cancer Detection</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    margin: 0;
+    padding: 0;
+    color: #33475b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h2 {
+    margin: 40px 0 20px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #102a43;
+}
+
+form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(16, 42, 67, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+input[type="file"] {
+    border: 2px dashed #bcccdc;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button {
+    background: #1d72b8;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(29, 114, 184, 0.4);
+    width: 100%;
+}
+
+.result-container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(16, 42, 67, 0.15);
+    padding: 30px 40px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.image-section, .info-section {
+    flex: 1 1 300px;
+    min-width: 280px;
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(16, 42, 67, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 300px;
+}
+
+.info-section .result {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: fit-content;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.info-section .result.cancer {
+    color: #c53030;
+    background-color: #fee2e2;
+    border: 2px solid #f56565;
+}
+
+.info-section .result.normal {
+    color: #2f855a;
+    background-color: #d1fae5;
+    border: 2px solid #38a169;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    height: 100px;
+}
+
+.progress-bar {
+    background-color: #e2e8f0;
+    border-radius: 50px;
+    overflow: hidden;
+    height: 28px;
+    width: 100%;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,.1);
+}
+
+.progress-fill {
+    height: 100%;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(90deg, #38a169, #2f855a);
+    width: 0;
+    transition: width 1.2s ease-in-out;
+    border-radius: 50px 0 0 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .result-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section, .info-section {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<h2>Bone Cancer Detection</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <button type="submit">Upload & Predict</button>
+</form>
+
+{% if img_path %}
+<div class="result-container">
+    <div class="image-section">
+        <h4>Uploaded Image:</h4>
+        <img src="{{ img_path }}" alt="Uploaded Image">
+    </div>
+
+    <div class="info-section">
+        {% if result %}
+            <div class="result {% if 'Cancer' in result %}cancer{% else %}normal{% endif %}">
+                {{ result }}
+            </div>
+            <div>{{ prob }}</div>
+        {% endif %}
+
+        {% if confidence_value %}
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div
+                    class="progress-fill"
+                    style="
+                        width: {{ confidence_value }}%;
+                        background: {% if 'Cancer' in result %}
+                            linear-gradient(90deg, #e53e3e, #c53030);
+                        {% else %}
+                            linear-gradient(90deg, #38a169, #2f855a);
+                        {% endif %};
+                    ">
+                    {{ confidence_value }}%
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endif %}
+
+</body>
+</html>

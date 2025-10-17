@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About the Project</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+        margin: 0;
+        padding: 0;
+        color: #33475b;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .card {
+        background-color: #fff;
+        display: inline-block;
+        padding: 40px 50px;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(16, 42, 67, 0.15);
+        max-width: 600px;
+        margin: 20px;
+    }
+
+    img.logo {
+
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 2rem;
+        color: #102a43;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+    }
+
+    p {
+        font-size: 1rem;
+        color: #555;
+        margin: 8px 0;
+    }
+
+    a.button {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: white;
+        background-color: #1d72b8;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 600;
+        box-shadow: 0 5px 15px rgba(29, 114, 184, 0.4);
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    a.button:hover {
+        background: #155d8b;
+        box-shadow: 0 7px 20px rgba(21, 93, 139, 0.6);
+    }
+
+</style>
+</head>
+<body>
+
+<div class="card">
+    <img src="{{ url_for('static', filename='university_logo.png') }}" alt="University Logo" class="logo">
+    <h2>Bone Cancer Detection Project</h2>
+    <p>Prepared by: <strong>Sarah Najdat Shaheen</strong></p>
+    <p>Class: <strong>C36</strong></p>
+    <p>Semester: <strong>F23_S24</strong></p>
+    <a href="/predict" class="button">Go to Prediction Page</a>
+</div>
+
+</body>
+</html>
