@@ -31,6 +31,13 @@ This project builds a **deep learning model** that can automatically detect bone
 The model achieved an accuracy of 91% and an AUC of 0.97, which indicates that while a few predictions might be slightly off around the decision threshold, the model overall has a very strong ability to distinguish between cancerous and normal images.
 
 ---
+## 📈 ROC Curve
+
+The following figure shows the ROC Curve generated from the model evaluation phase.
+It demonstrates the model’s excellent ability to distinguish between cancer and normal images, with an AUC of 0.97:
+
+<p align="center"> <img src="static/roc_curve.png" alt="ROC Curve" width="40%"> </p>
+
 ## 🖼️ Flask Web Interface
 The Flask web app allows users to upload an X-ray image, analyze it, and instantly display the prediction along with the confidence level.
 
@@ -81,13 +88,6 @@ When an X-ray image of a cancerous bone is uploaded,
 the system predicts it as Cancer, highlighted in red to alert the user about a possible malignancy.
 
 <p align="center"> <img src="static/example_cancer.png" alt="Cancer Prediction Interface" width="60%"> </p>
-
-## 📈 ROC Curve
-
-The following figure shows the ROC Curve generated from the model evaluation phase.
-It demonstrates the model’s excellent ability to distinguish between cancer and normal images, with an AUC of 0.97:
-
-<p align="center"> <img src="static/roc_curve.png" alt="ROC Curve" width="40%"> </p>
 
 ## 🌍 Future Improvements
 
