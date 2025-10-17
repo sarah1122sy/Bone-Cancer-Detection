@@ -55,7 +55,7 @@ Dataset used: https://drive.google.com/drive/folders/1tPPzQVHy09LXfptV-mpAc91LVn
 
 Trained Model: https://drive.google.com/drive/folders/1AquyK98Bw-yVq9KKm857Q8CwkdQd6UJZ?usp=drive_link
 
-🌍 Future Improvements
+## 🌍 Future Improvements
 
 Integrate with real hospital systems for automated screening.
 
@@ -65,7 +65,7 @@ Use advanced architectures like ResNet or EfficientNet for higher accuracy.
 
 Build an admin dashboard for doctors to manage patient results.
 
-🧾 Notes
+## 🧾 Notes
 
 Dataset and model files are too large to be stored on GitHub.
 
